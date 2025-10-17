@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EDteam - Cursos de Programación</title>
+</head>
+
+<body>
+    <!-- Cabecera con navegación principal que se muestra solo al inicio -->
+    <header>
+        <!-- Logotipo enlazado a la parte superior -->
+        <a href="#inicio" class="logo-edteam">EDteam</a>
+
+        <!-- Menú con accesos internos y enlace al formulario -->
+        <nav>
+            <a href="#inicio" class="activo">Inicio</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#rutas">Rutas</a>
+            <a href="#escuelas">Escuelas</a>
+            <a href="#empresas">Empresas</a>
+            <a href="contacto.html">Formularios</a>
+        </nav>
+    </header>
+
+    <!-- Sección principal con animación existente -->
+    <section class="seccion-inicio" id="inicio">
+        <!-- Imagen animada de héroe para mantener el estilo original -->
+        <div class="imagen-inicio">
+            <img src="/img/principal2.jpg" alt="equipo de EDteam aprendiendo en línea">
+        </div>
+        <!-- Contenido textual destacado -->
+        <div class="contenido-inicio">
+            <h1>Aprende con <span>EDteam</span></h1>
+            <h3 class="texto-animado">Formamos a <span></span></h3>
+            <p>Diseñamos experiencias de aprendizaje enfocadas en programación, tecnología y habilidades digitales. Únete a
+                nuestra comunidad y alcanza tus metas profesionales con rutas claras y mentores especializados.</p>
+            <!-- Enlaces a redes sociales corporativas -->
+            <div class="iconos-sociales">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <!-- Botón principal que dirige a los cursos -->
+            <a href="#cursos" class="boton-general">Explorar cursos</a>
+            <!-- Enlace a video promocional -->
+             <br><br>
+            <p class="enlace-video">Conoce nuestra historia en <a href="https://www.youtube.com/watch?v=jrNv465OVr8" target="_blank" rel="noopener">este video</a>.</p>
+        </div>
+    </section>
+
+    <!-- Sección de resumen de rutas destacadas con lista -->
+    <section class="seccion-rutas" id="rutas">
+        <h2 class="titulo-seccion">Rutas recomendadas</h2>
+        <p class="descripcion-seccion">Construimos caminos de aprendizaje para que avances paso a paso, desde los conceptos más básicos hasta habilidades avanzadas. Elige una ruta según tu interés y comienza a aprender a tu propio ritmo.</p>
+        
+        <ul class="lista-rutas">
+            <!-- Ruta Full Stack JavaScript -->
+            <li>
+                <strong>Full Stack:</strong> Aprende a desarrollar aplicaciones completas utilizando JavaScript tanto en el frontend como en el backend. 
+                <ul>
+                    <li>Fundamentos de HTML, CSS y JavaScript.</li>
+                    <li>Uso de bases de datos con MongoDB y MySQL.</li>
+                </ul>
+            </li>
+            <center>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/FbNw5-mkg6E?si=H-YEhNl6zDRXZEW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img width="500" height="300" src="https://edteam-media.s3.amazonaws.com/blogs/original/f3b5c786-6725-468a-ae2b-ab2a21fa41a1.png" alt="">
+            </center>
+    
+            <!-- Ruta Frontend -->
+            <li>
+                <strong>Frontend:</strong> Aprende a construir interfaces web interactivas y visualmente atractivas. 
+                <ul>
+                    <li>Fundamentos de HTML5, CSS3 y JavaScript.</li>
+                    <li>Frameworks y librerías como React.js y Vue.js.</li>
+                </ul>
+            </li>
+            <center>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/6D25A8_50Jk?si=YU_6-n-vf_BlvmxN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img width="500" height="300" src="https://edteam-media.s3.amazonaws.com/community/original/6104874a-d8a1-47e9-a2b2-245c1de76dc3.jpg" alt="">
+            </center>
+    
+            <!-- Ruta Backend -->
+            <li>
+                <strong>Backend:</strong> Aprende a construir la lógica del servidor y a trabajar con bases de datos y autenticación.
+                <ul>
+                    <li>Desarrollo con Node.js y Express.</li>
+                    <li>Conexión a bases de datos (SQL y NoSQL) como MongoDB, PostgreSQL y MySQL.</li>
+                </ul>
+            </li>
+            <center>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/hBSsuZlBaR0?si=6b0w29v0-Ay-TaL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img width="500" height="300" src="https://edteam-media.s3.amazonaws.com/community/original/a66f8dcb-a32c-4a67-8409-59b3ab44ef31.jpg" alt="">
+            </center>
+        </ul>
+    </section>
+    
+
+    <!-- Sección de cursos con plantilla repetible usando tabla -->
+    <section class="seccion-cursos" id="cursos">
+        <h2 class="titulo-seccion">Cursos destacados</h2>
+        <p class="descripcion-seccion">Utiliza esta plantilla para mostrar 12 cursos distribuidos en 3 filas y 4 columnas.</p>
+        <!-- Tabla principal que organiza los cursos en 3x4 -->
+        <table class="tabla-cursos">
+            <!-- Cuerpo con tarjetas de cursos disponibles -->
+            <tbody>
+                <tr>
+                    <td>
+                        <!-- Plantilla de tarjeta de curso -->
+                        <article class="tarjeta-curso">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-IFLu2UxNbNsOY8FeZAlWxp3kMCXwODqYTA&s" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de HTML</h3>
+                            <p>Aprende los fundamentos de HTML, creando estructuras web desde cero con etiquetas, enlaces y más.</p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWsbMwV6RfuWerKpgAGi7VVyE6O6B59lgPHA&s" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de CSS</h3>
+                            <p>Diseña páginas web atractivas usando CSS para darle estilo, formato y diseño a tu contenido.</p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://edteam-media.s3.amazonaws.com/courses/original/394b4acc-434f-4c64-819b-be965d48fda7.png" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Animación con css</h3>
+                            <p>Domina las animaciones CSS y crea efectos visuales sorprendentes en tus páginas web.</p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://edteam-media.s3.amazonaws.com/courses/original/10caad5c-6b94-410c-921e-0f341d4e6115.png" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de PHP</h3>
+                            <p>Aprende PHP desde cero y empieza a construir aplicaciones web dinámicas y poderosas.</p>
+                        </article>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://edteam-media.s3.amazonaws.com/courses/original/1fc49db5-2454-43e5-b94b-bed0d98719f2.png" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de JavaScript</h3>
+                            <p>Entiende el corazón de la programación web, trabajando con JavaScript para crear páginas interactivas.</p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://edteam-media.s3.amazonaws.com/courses/original/d5a5ad33-b630-4edb-a098-167ccd5b7207.png" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de TypeScript</h3>
+                            <p>Mejora tu desarrollo JavaScript con TypeScript, el superconjunto de JavaScript que te permite escribir código más seguro.</p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfRYOnpBbFW2wat39n-DHNG-tJUXtyHvDRTA&s" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de Java</h3>
+                            <p>Aprende Java desde cero y adquiere conocimientos para crear aplicaciones de alto rendimiento y multiplataforma.</p>
+                        </article>
+                    </td>
+                    <td>
+                        <article class="tarjeta-curso">
+                            <img src="https://edteam-media.s3.amazonaws.com/courses/small/33a56871-2b7e-4d2b-ac0d-5de28235a344.png" alt="Miniatura del curso" class="imagen-curso">
+                            <h3>Curso de C#</h3>
+                            <p>Desarrolla aplicaciones robustas con C# en entornos como aplicaciones de escritorio, móviles y más.</p>
+                        </article>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Sección de escuelas con descripción en lista de columnas -->
+    <section class="seccion-escuelas" id="escuelas">
+        <h2 class="titulo-seccion">Escuelas</h2>
+        <p class="descripcion-seccion">Cada escuela agrupa cursos especializados para dominar tecnologías clave.</p>
+        <div class="columnas-escuelas">
+            <!-- Descripción breve de la escuela de frontend -->
+            <p><strong>Escuela de Frontend:</strong> HTML, CSS y frameworks modernos para interfaces atractivas.</p>
+            <!-- Descripción breve de la escuela de backend -->
+            <p><strong>Escuela de Backend:</strong> Arquitecturas escalables con Java, Python y Node.js.</p>
+            <!-- Descripción breve de la escuela de datos -->
+            <p><strong>Escuela de Datos:</strong> Procesamiento de información y visualización efectiva.</p>
+        </div>
+        <center>
+            <img src="/img/1..jpg" alt="1" width="220">
+            <img src="/img/2.jpg" alt="2" width="220">
+            <img src="/img/3..jpg" alt="3" width="220">
+            <img src="/img/4..jpg" alt="4" width="220">
+            <img src="/img/5.jpg" alt="5" width="220">
+        </center>
+    </section>
+
+    <!-- Sección de empresas con tabla de beneficios -->
+    <section class="seccion-empresas" id="empresas">
+        <h2 class="titulo-seccion">Empresas</h2>
+        <p class="descripcion-seccion">Programas corporativos adaptados a equipos y objetivos de negocio.</p>
+        <!-- Tabla con los servicios clave para empresas -->
+        <table class="tabla-empresas">
+            <!-- Encabezados de la tabla de servicios -->
+            <thead>
+                <tr>
+                    <th>Servicio</th>
+                    <th>Descripción</th>
+                    <th>Beneficio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <center>
+                            <img src="https://edteam-media.s3.amazonaws.com/web/modules/group-plan/features-increment.svg" alt="" height="50px">
+                            <hr>
+                            Calidad de cursos
+                        </center>
+                    </td>
+                    <td>Metodología de enseñanza en español, con un riguroso proceso de evaluación en todos los cursos.</td>
+                    <td>Garantía de alta calidad educativa.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <img src="https://edteam-media.s3.amazonaws.com/web/modules/group-plan/features-cyrcle-graphic.svg" alt="" height="50px">
+                            <hr>
+                            Supervisión de avances
+                        </center>
+                    </td>
+                    <td>Acceso a estadísticas detalladas del aprendizaje del equipo (horas de estudio, cursos terminados, etc.).</td>
+                    <td>Mejora continua basada en métricas precisas de avance.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <img src="https://edteam-media.s3.amazonaws.com/web/modules/group-plan/features-business.svg" alt="" height="50px">
+                            <hr>
+                            Licencias reasignables
+                        </center>
+                    </td>
+                    <td>Facilidad para asignar, eliminar o reasignar licencias a otros miembros del equipo desde el panel de configuración.</td>
+                    <td>Flexibilidad en la gestión de licencias para equipos.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <img src="https://edteam-media.s3.amazonaws.com/web/modules/group-plan/features-support-woman.svg" alt="" height="50px">
+                            <hr>
+                            Soporte prioritario
+                        </center>
+                    </td>
+                    <td>Atención dedicada a resolver dudas comerciales por correo, chat y videoconferencia.</td>
+                    <td>Respuestas rápidas y atención personalizada.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <img src="https://edteam-media.s3.amazonaws.com/web/modules/group-plan/features-certificate.svg" alt="" height="50px">
+                            <hr>
+                            Certificados personales
+                        </center>
+                    </td>
+                    <td>Cada miembro puede generar su propio certificado validando los nuevos conocimientos adquiridos.</td>
+                    <td>Reconocimiento individual por el aprendizaje alcanzado.</td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <img src="https://edteam-media.s3.amazonaws.com/web/modules/group-plan/features-transaction.svg" alt="" height="50px">
+                            <hr>
+                            Factura unificada
+                        </center>
+                    </td>
+                    <td>Emisión de una sola factura para todos los miembros del plan.</td>
+                    <td>Facilidad de gestión financiera para las empresas.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+     <!-- Footer -->
+  <footer>
+    <h2>&copy; 2025 EDteam. Todos los derechos reservados.</h3>
+  </footer>
+</body>
+
+</html>

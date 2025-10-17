@@ -1,0 +1,100 @@
+/* Estilo general para el formulario */
+body {
+    background-color: #121212; /* Fondo negro para el cuerpo */
+    color: #f7f7f7; /* Color de texto blanco para contrastar con el fondo negro */
+}
+
+form {
+    width: 50%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Fondo oscuro para el formulario */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(170, 203, 242, 0.3);
+}
+
+
+form label {
+    display: block;
+    margin-bottom: 15px;
+    color: #f7f7f7; /* Texto blanco para las etiquetas */
+}
+
+form input, form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #606060; /* Borde rojo para los inputs y textarea */
+    border-radius: 4px;
+    background-color: #333; /* Fondo oscuro para los campos de entrada */
+    color: #f7f7f7; /* Texto blanco en los campos */
+    font-size: 16px;
+}
+
+form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+form button {
+    width: 95%;
+    padding: 10px;
+    background-color: #d32f2f; /* Fondo rojo para el botón */
+    color: white;
+    border: 1px solid #c62828; /* Borde rojo para el botón */
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #7a2424; /* Rojo más oscuro cuando se pasa el cursor */
+}
+
+/* Estilo para el botón de volver */
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #d32f2f; /* Fondo rojo para el botón de regreso */
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    border: 1px solid #c65c5c; /* Borde rojo */
+}
+
+.btn-volver:hover {
+    background-color: #7e2121; /* Rojo más oscuro cuando se pasa el cursor */
+}
+
+/* Responsividad */
+@media screen and (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 12px;
+    }
+}
+
+.form-section {
+    text-align: center;
+}
+
+.form-section h2 {
+    margin: 70px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #ff3c3c; /* Título en azul claro */
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.288);
+}

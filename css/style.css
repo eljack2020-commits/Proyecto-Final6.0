@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+/* Reinicio básico para toda la página principal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tamaño base de fuente para cálculos rem */
+html{
+    font-size: 62.5%;
+}
+
+/* Configuración global del cuerpo */
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* Cabecera principal mostrada solo al inicio sin fijarse al desplazar */
+header{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Marca principal del encabezado */
+.logo-edteam{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Animación sutil del logotipo */
+.logo-edteam:hover{
+    transform: scale(1.1);
+}
+
+/* Enlaces de la barra de navegación */
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* Estado activo o al pasar el cursor */
+nav a:hover,
+nav a.activo{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Navegación responsiva desplegable */
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.activo{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.activo{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+}
+
+/* Espaciado estándar entre secciones */
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+/* Distribución general del héroe */
+.seccion-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+/* Titular destacado de la sección principal */
+.seccion-inicio .contenido-inicio h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Color acento para palabras clave */
+span{
+    color: #b74b4b;
+}
+
+/* Subtítulo animado */
+.contenido-inicio h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Párrafo introductorio */
+.contenido-inicio p{
+    font-size: 1.6rem;
+}
+/* Reinicio básico para toda la página principal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tamaño base de fuente para cálculos rem */
+html{
+    font-size: 62.5%;
+}
+
+/* Configuración global del cuerpo */
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* Cabecera principal mostrada solo al inicio sin fijarse al desplazar */
+header{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Marca principal del encabezado */
+.logo-edteam{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Animación sutil del logotipo */
+.logo-edteam:hover{
+    transform: scale(1.1);
+}
+
+/* Enlaces de la barra de navegación */
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* Estado activo o al pasar el cursor */
+nav a:hover,
+nav a.activo{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Navegación responsiva desplegable */
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.activo{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.activo{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+}
+
+/* Espaciado estándar entre secciones */
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+/* Distribución general del héroe */
+.seccion-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+/* Titular destacado de la sección principal */
+.seccion-inicio .contenido-inicio h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Color acento para palabras clave */
+span{
+    color: #b74b4b;
+}
+
+/* Subtítulo animado */
+.contenido-inicio h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Párrafo introductorio */
+.contenido-inicio p{
+    font-size: 1.6rem;
+}
+/* Reinicio básico para toda la página principal */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Tamaño base de fuente para cálculos rem */
+html{
+    font-size: 62.5%;
+}
+
+/* Configuración global del cuerpo */
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+/* Cabecera principal mostrada solo al inicio sin fijarse al desplazar */
+header{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Marca principal del encabezado */
+.logo-edteam{
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* Animación sutil del logotipo */
+.logo-edteam:hover{
+    transform: scale(1.1);
+}
+
+/* Enlaces de la barra de navegación */
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+/* Estado activo o al pasar el cursor */
+nav a:hover,
+nav a.activo{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+/* Navegación responsiva desplegable */
+@media(max-width:995px){
+    nav{
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0,0,0,0.1);
+    }
+
+    nav.activo{
+        display: block;
+    }
+
+    nav a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.activo{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #b74b4b;
+    }
+}
+
+/* Espaciado estándar entre secciones */
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+/* Distribución general del héroe */
+.seccion-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+}
+
+/* Titular destacado de la sección principal */
+.seccion-inicio .contenido-inicio h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Color acento para palabras clave */
+span{
+    color: #b74b4b;
+}
+
+/* Subtítulo animado */
+.contenido-inicio h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+/* Párrafo introductorio */
+.contenido-inicio p{
+    font-size: 1.6rem;
+}
+
+/*-----------------------------------*/
+/*          Imagen Inicio            */
+/*-----------------------------------*/
+
+/* Imagen principal con efecto resaltado */
+.imagen-inicio img{
+    width: 500px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/*------------------------------------*/
+/*           Iconos sociales          */
+/*------------------------------------*/
+
+/* Iconos sociales alineados con la identidad */
+.iconos-sociales a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #b74b4b;
+}
+
+/* Efecto al interactuar con los iconos sociales */
+.iconos-sociales a:hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0  0 25px #b74b4b;
+}
+
+/* Botón reutilizable para llamados a la acción */
+.boton-general{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #b74b4b;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #b74b4b;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Animación de realce del botón principal */
+.boton-general:hover{
+    transform: scale3d(1.03);
+    background-color: #b74b4b;
+    color: black;
+    box-shadow: 0 0 25px #b74b4b;
+}
+
+/* Contenedor de la animación de texto */
+.texto-animado{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+/* Contenedor del texto animado */
+.texto-animado span{
+    position: relative;
+}
+
+/* Palabras cíclicas mostradas en la animación */
+.texto-animado span::before{
+    content: "software Developer";
+    color: #b74b4b;
+    animation: words 20s infinite;
+}
+
+/* Simulación del cursor parpadeante */
+.texto-animado span::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+/* Animación del cursor tipo máquina de escribir */
+@keyframes cursor{
+    to{
+        border-left: 3px solid #b74b4b;
+    }
+}
+
+/* Animación que cambia las palabras mostradas */
+@keyframes words{
+    0%, 20%{
+        content: "Web Developer";
+    }
+    21%, 40%{
+        content: "Developer";
+    }
+    41%, 60%{
+        content: "Web Designer";
+    }
+    61%, 80%{
+        content: "Programador";
+    }
+    81%, 100%{
+        content: "Ingenieros de Sistemas";
+    }
+}
+
+
+/*---------------------------------*/
+/*        RUTAS RECOMENDADAS       */
+/*---------------------------------*/
+
+/* Estilos generales para secciones informativas */
+.titulo-seccion{
+    font-size: 3rem;
+    color: #b74b4b;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+
+/* Descripción secundaria de cada bloque */
+.descripcion-seccion{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    opacity: 0.9;
+}
+
+/* Lista de rutas recomendadas */
+.lista-rutas{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    word-spacing: 0.4rem;
+}
+.lista-rutas strong{
+    color: #b74b4b;
+}
+.lista-rutas iframe {
+    margin-right: 60px; /* Añade espacio a la derecha de cada iframe */
+    border-radius: 10%;
+}
+
+/* Estilo para las subviñetas (sublistas) */
+.lista-rutas ul {
+    margin-top: 10px; /* Añade espacio encima de las subviñetas */
+    margin-left: 20px; /* Aumenta el margen izquierdo para crear la jerarquía */
+}
+
+
+/*---------------------------------------*/
+/*       CURSOS (dentro de tablas)       */
+/*---------------------------------------*/
+/* Plantilla de curso reutilizable */
+.tarjeta-curso{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+    color: white;
+}
+
+/* Imagen de cada curso */
+.imagen-curso{
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+/*----------------------------------------*/
+/*                TABLAS                  */
+/*----------------------------------------*/
+
+/* Tabla principal de cursos con bordes visibles */
+.tabla-cursos{
+    width: 100%;
+    text-align: center;
+    border-spacing: 2rem;
+}
+
+/* Celdas de la tabla de cursos con marco resaltado */
+.tabla-cursos td{
+    border: 0.2rem solid #68357e;
+    border-radius: 4%;
+    padding: 1rem;
+}
+
+
+
+
+/* Tabla corporativa para empresas con bordes definidos */
+.tabla-empresas {
+    width: 70%;
+    height: auto;
+    text-align: left;
+    border-spacing: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.tabla-empresas th {
+    color: #b74b4b;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border: 0.2rem solid #b74b4b;
+    padding: 1rem;
+}
+
+.tabla-empresas td {
+    line-height: 1.6;
+    opacity: 0.9;
+    border: 0.2rem solid #b74b4b;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.tabla-empresas th {
+    color: #b74b4b;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    border: 0.2rem solid #b74b4b;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Definiendo el ancho de las columnas específicas */
+.tabla-empresas .col-1 {
+    width: 10%; /* Ajusta el ancho de la primera columna */
+}
+
+.tabla-empresas .col-2 {
+    width: 50%; /* Ajusta el ancho de la segunda columna */
+}
+
+.tabla-empresas .col-3 {
+    width: 25%; /* Ajusta el ancho de la tercera columna */
+}
+
+.tabla-empresas td {
+    line-height: 1.6;
+    opacity: 0.9;
+    border: 0.2rem solid #b74b4b;
+    padding: 1rem;
+}
+
+/*-----------------------------------*/
+/* Columnas descriptivas de escuelas */
+/*-----------------------------------*/
+
+.columnas-escuelas{
+    column-count: 3;
+    column-gap: 2rem;
+    column-rule: 0.2rem solid #b74b4b;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+/*---------------------------*/
+/* Enlace al video destacado */
+/*---------------------------*/
+
+.enlace-video{
+    font-size: 1.4rem;
+    text-align: left;
+    word-spacing: 0.3rem;
+}
+
+/* Formato del enlace dentro del video destacado */
+.enlace-video a{
+    color: #b74b4b;
+    text-decoration-line: underline;
+    text-decoration-color: #b74b4b;
+    text-decoration-style: solid;
+}
+
+/* Reset some styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #1e1e1e;
+    padding: 40px 0;
+    text-align: center;
+    color: #bbb;
+  }
